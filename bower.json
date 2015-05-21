@@ -1,0 +1,27 @@
+{
+  "name": "angular-simditor",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ghostboyzone/angular-simditor",
+  "authors": [
+    "ghostboyzone <ghostboyzone@gmail.com>"
+  ],
+  "description": "Simditor's AngularJS Version",
+  "main": "src/angular-simditor.js",
+  "keywords": [
+    "angular",
+    "simditor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0",
+    "simditor": "~2.1.*",
+    "simditor-html": "mycolorway/simditor-html#~1.0.0"
+  }
+}
