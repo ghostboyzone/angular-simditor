@@ -8,4 +8,5 @@ angular.module('ghostapp', [
 	simditorConfig.placeholder = '这里输入文字...';
 }])
 .controller('TestCtrl', ['$scope', function($scope){
+	$scope.test = 'test content';
 }]);

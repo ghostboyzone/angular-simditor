@@ -23,14 +23,13 @@
                 }, // {} = isolate, true = child, false/undefined = no change
                 // controller: function($scope, $element, $attrs, $transclude) {},
                 // require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
-                // restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+                restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
                 template: '<textarea data-autosave="editor-content" autofocus></textarea>',
                 // templateUrl: '',
                 replace: true,
                 // transclude: true,
                 // compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
                 link: function($scope, iElm, iAttrs, controller) {
-                	$scope.content = '123';
                     var editor = new Simditor(
                     	angular.extend({textarea: iElm}, simditorConfig)
                 	);
