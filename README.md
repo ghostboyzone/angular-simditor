@@ -3,7 +3,7 @@
 Angular Editor for [simditor](https://github.com/mycolorway/simditor)
 
 # Bower Install
-	bower install ghostboyzone/angular-simditor --save
+	bower install angular-simditor --save
 
 # 用法
 	
