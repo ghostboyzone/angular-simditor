@@ -1,6 +1,6 @@
 {
   "name": "angular-simditor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/ghostboyzone/angular-simditor",
   "authors": [
     "ghostboyzone <ghostboyzone@gmail.com>"
@@ -23,5 +23,13 @@
     "angular": ">=1.2.0",
     "simditor": "~2.1.*",
     "simditor-html": "mycolorway/simditor-html#~1.0.0"
+  },
+  "overrides": {
+    "simditor-html": {
+      "main": [
+        "lib/simditor-html.js",
+        "styles/simditor-html.css"
+      ]
+    }
   }
 }
