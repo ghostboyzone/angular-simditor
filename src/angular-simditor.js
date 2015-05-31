@@ -33,7 +33,13 @@
                     var editor = new Simditor(
                     	angular.extend({textarea: iElm}, simditorConfig)
                 	);
-                	editor.setValue($scope.content);
+
+                    $scope.$watch('content', function(value){
+                        if(typeof value !== 'undefined'){
+                            editor.setValue($scope.content);
+                        }
+                    });
+
                 	editor.on('valuechanged blur focus', function(e){
                 		if($scope.content != editor.getValue()){
 	                		$scope.$apply(function(){
