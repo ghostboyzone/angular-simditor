@@ -31,23 +31,24 @@
                 // compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
                 link: function($scope, iElm, iAttrs, controller) {
                     var editor = new Simditor(
-                    	angular.extend({textarea: iElm}, simditorConfig)
-                	);
+                        angular.extend({textarea: iElm}, simditorConfig)
+                    );
 
-                    $scope.$watch('content', function(value){
-                        if(typeof value !== 'undefined'){
-                            editor.setValue($scope.content);
+                    var nowContent = '';
+
+                    $scope.$watch('content', function(value, old){
+                        if(typeof value !== 'undefined' && value != old && value != nowContent){
+                            editor.setValue(value);
                         }
                     });
 
-                	editor.on('valuechanged blur focus', function(e){
-                		if($scope.content != editor.getValue()){
-	                		$scope.$apply(function(){
-	                			$scope.content = editor.getValue();
-	                			// console.log($scope.content);
-	                		});
-                		}
-        		    });
+                    editor.on('valuechanged', function(e){
+                        if($scope.content != editor.getValue()){
+                            $scope.$apply(function(){
+                                $scope.content = nowContent = editor.getValue();
+                            });
+                        }
+                    });
                 }
             };
         }]);
