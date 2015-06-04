@@ -3,15 +3,15 @@
     (function() {
         var ngSimditor = angular.module('angular-simditor', []);
         ngSimditor.constant('simditorConfig', {
-        	placeholder: '这里输入文字...',
-        	toolbar: ['title', 'bold', 'italic', 'underline', 'strikethrough', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment', '|', 'html'],
-        	pasteImage: true,
-        	defaultImage: '',
-        	upload: {
+            placeholder: '这里输入文字...',
+            toolbar: ['title', 'bold', 'italic', 'underline', 'strikethrough', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment', '|', 'html'],
+            pasteImage: true,
+            defaultImage: '',
+            upload: {
                 url: '/upload'
             },
             allowedTags: ['br', 'a', 'img', 'b', 'strong', 'i', 'u', 'font', 'p', 'ul', 'ol', 'li', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'hr', 'div', 'script', 'style']
-		});
+        });
         ngSimditor.directive('ngSimditor', ['$timeout', 'simditorConfig', function($timeout, simditorConfig) {
             // Runs during compile
             return {
