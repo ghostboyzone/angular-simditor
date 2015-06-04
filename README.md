@@ -4,6 +4,8 @@ Angular Editor for [simditor](https://github.com/mycolorway/simditor)
 
 # Demo 
 [http://ghostboyzone.github.io/angular-simditor/](http://ghostboyzone.github.io/angular-simditor/)
+
+![screenshot](http://ghostboyzone.github.io/angular-simditor/demo.png)
 # Bower Install
 	bower install angular-simditor --save
 
