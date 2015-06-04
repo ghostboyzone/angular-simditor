@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="styles/vendor.86912185.css">
     <style>
     h1,
     h2,
@@ -191,20 +192,6 @@
     }
     </style>
     <title>Angular-Simditor</title>
-
-    <!-- build:css({.tmp,src}) styles/vendor.css -->
-    <link rel="stylesheet" href="app/vendor.css">
-    <!-- bower:css -->
-
-    <!-- endbower -->
-    <!-- endbuild -->
-
-
-    <!-- build:css({.tmp,src}) styles/app.css -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="app/index.css">
-    <!-- endinject -->
-    <!-- endbuild -->
 </head>
 
 <body>
@@ -221,17 +208,11 @@
 // editorModel就是编辑器对应的富文本的值
 </code></pre>
     <h1>Demo</h1>
+    <div><ng-simditor content="test"></ng-simditor></div>
+    <div>编辑器正文：{{ test }}</div>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js({.tmp,src}) scripts/app.js -->
-    <!-- inject:js -->
-
-    <!-- endinject -->
-    <!-- endbuild -->
+    <script src="scripts/vendor.7bcb9930.js"></script>
+    <script src="scripts/scripts.c003fae0.js"></script>
 </body>
 
 </html>
