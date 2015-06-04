@@ -190,13 +190,21 @@
             page-break-inside: avoid;
         }
     }
+    a {
+        text-decoration:none;
+    }
     </style>
     <title>Angular-Simditor</title>
 </head>
 
 <body>
-    <h1>Angular-Simditor</h1>
-    <p>Angular Editor for <a href="https://github.com/mycolorway/simditor">simditor</a></p>
+    <h1><a href="https://github.com/ghostboyzone/angular-simditor" target="_blank">Angular-Simditor</a></h1>
+    <p>
+        <iframe src="https://ghbtns.com/github-btn.html?user=ghostboyzone&repo=angular-simditor&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=ghostboyzone&repo=angular-simditor&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=ghostboyzone&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+    </p>
+    <p>Angular Editor for simditor</p>
     <h1>Bower Install</h1>
     <pre><code>bower install angular-simditor --save
 </code></pre>
@@ -208,9 +216,14 @@
 // editorModel就是编辑器对应的富文本的值
 </code></pre>
     <h1>Demo</h1>
-    <div><ng-simditor content="test"></ng-simditor></div>
-    <div>编辑器正文：{{ test }}</div>
-
+    <div><ng-simditor content="editor"></ng-simditor></div>
+    <h3>编辑器HTML源码：</h3>
+    <p>{{ editor }}</p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
     <script src="scripts/vendor.7bcb9930.js"></script>
     <script src="scripts/scripts.c003fae0.js"></script>
 </body>
